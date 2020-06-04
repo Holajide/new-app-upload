@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class='center'>
+    <app-logo></app-logo>
+    <h1>Sign In to Your Portal</h1>
+  </div>
+
+  <form padding>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-list>
+            <ion-item>
+              <ion-label position="floating">Username</ion-label>
+              <ion-input autocomplete="off" name="Username" type="text" [(ngModel)]="postData.username"></ion-input>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input autocomplete="off" name="password" type="password" [(ngModel)]="postData.password"></ion-input>
+            </ion-item>
+      
+            <ion-item lines='none'>
+              <a routerLink='/signup'>Create Account</a>
+            </ion-item>
+      
+            <ion-button type="submit" expand="block" shape="round" color="success" (click)="loginAction()">Login</ion-button>
+      
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    
+  </form>
+
+
+</ion-content>

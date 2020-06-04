@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Sign up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class='center'>
+  <app-logo></app-logo>
+  <h1>Create Account</h1>
+  </div>
+
+  <form padding>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-list>
+
+            <ion-item>
+              <ion-label position="floating">Frist Name</ion-label>
+              <ion-input type='text'></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Last Name</ion-label>
+              <ion-input type='text'></ion-input>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type='text'></ion-input>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label position="floating">Username</ion-label>
+              <ion-input type='text'></ion-input>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type='password'></ion-input>
+            </ion-item>
+      
+            <ion-item lines='none'>
+              Already you have an account?<a routerLink='/login'>Sign In</a>
+            </ion-item>
+      
+            <ion-button expand='block' shape='round' color='success' routerLink='/home'>Registration</ion-button>
+      
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </form>
+  
+
+</ion-content>
